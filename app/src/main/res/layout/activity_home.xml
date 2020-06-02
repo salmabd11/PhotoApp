@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <EditText
+        android:id="@+id/inputSerch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search data here..."
+        android:background="@drawable/inputsearch"
+        android:drawableRight="@drawable/ic_search"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="20dp"
+        android:layout_margin="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputSerch">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>

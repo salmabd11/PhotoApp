@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+ <de.hdodenhof.circleimageview.CircleImageView
+     android:id="@+id/profilephoto"
+     android:layout_marginStart="5dp"
+     android:layout_width="96dp"
+     android:layout_height="96dp"
+     android:scaleType="centerCrop"
+     android:src="@drawable/profileimge"
+     app:civ_border_width="5dp"
+     android:layout_alignParentTop="true"
+     android:layout_centerInParent="true"
+     app:civ_border_color="#FF000000"/>
+
+    <LinearLayout
+        android:layout_below="@+id/profilephoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+    <EditText
+        android:id="@+id/EtName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/EtEmail"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/textviewprogress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#C64F29"
+        android:text="0.00"/>
+
+    <ProgressBar
+        android:id="@+id/Progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp" />
+
+    <Button
+        android:id="@+id/SaveBTN"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Save Data"
+        android:layout_centerInParent="true"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
